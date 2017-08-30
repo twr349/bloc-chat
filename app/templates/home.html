@@ -1,31 +1,15 @@
 <section class="main">
 
-<div class="nav">
-  <div class="logo">
-      <h1>Bloc Chat</h1>
-  </div>
+  <div class="nav">
+    <div class="logo">
+        <h1>Bloc Chat</h1>
+      </div>
 
-    <div class="new-room-button">
-      <button type="button" name="new-room">New Room</button>
-    </div>
-
-    <div class="chat-rooms">
-      <ul>
-        <li>Room 1</li>
-        <li>Room 2</li>
-        <li>Room 3</li>
-      </ul>
-    </div>
-  </div>
-
-    <div class="chat-box">
-    </div>
-
-    <div class="chat-text">
-        <div class="send-button">
+        <div class="chat-rooms" ng-repeat="room in home.rooms">
+          <h4 class="room-name">{{ room.$value }}</h4>
         </div>
-    </div>
 
 
 
+  </div>
 </section>
