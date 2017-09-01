@@ -1,0 +1,15 @@
+<section class="modal-box" ng-controller="ModalCtrl as modal">
+    <div class="modal-header">
+        <h3 class="modal-title">Make new room</h3>
+    </div>
+    <div class="modal-body">
+        <h5 class="modal-prompt">Enter a room name</h5>
+            <input type="text" name="input" ng-model="room">
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="">Make room</button>
+        <button class="btn btn-warning" type="button" ng-click="modal.cancel()">Cancel</button>
+    </div>
+
+
+</section>

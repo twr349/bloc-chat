@@ -5,6 +5,9 @@
         <h1>Bloc Chat</h1>
       </div>
 
+        <button type="button" name="new-room" data-target="modal" ng-click="home.openRoom()">New Room</button>
+
+
         <div class="chat-rooms" ng-repeat="room in home.rooms">
           <h4 class="room-name">{{ room.$value }}</h4>
         </div>
