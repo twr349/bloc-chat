@@ -5,10 +5,14 @@
 
 
 
-      modal.cancel = function() {
-        $uibmodalInstance.close();
-      }
+      modal.cancel = function () {
+        $uibModalInstance.close();
+      };
 
+      modal.makeRoom = function () {
+        Room.add(modal.newRoom);
+        $uibModalInstance.close();
+      }
 
 
   }
