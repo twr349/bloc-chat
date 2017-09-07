@@ -16,10 +16,7 @@
         home.setRoom = function (room) {
           home.mainRoom = room;
           home.messages = Message.getByRoomId(home.mainRoom.$id);
-          //just for sample messages
-          //home.setMessage = Message.sampleMessage();
-          //console.log(home.setMessage);
-          //console.log(message);
+          
         };
 
 

@@ -3,17 +3,7 @@
       var Message = {};
       var ref = firebase.database().ref().child("messages");
       var messages = $firebaseArray(ref);
-      //just for sample messages
 
-      //just for sample messages
-
-
-      //just for sample messages
-      //Message.sampleMessage = function (roomId) {
-
-          //return messages;
-
-      //};
 
 
       Message.getByRoomId = function (roomId) {
