@@ -7,12 +7,27 @@
 
         <button type="button" name="new-room" data-target="modal" ng-click="home.openRoom()">New Room</button>
 
-
         <div class="chat-rooms" ng-repeat="room in home.rooms">
-          <h4 class="room-name">{{ room.$value }}</h4>
+          <h4 class="room-name" ng-click="home.setRoom(room)">{{ room.$value }}</h4>
         </div>
 
-
-
   </div>
+
+  <div class="message-box">
+    <div class"message-room-name">
+      <h2>{{ home.mainRoom.$value }}</h2>
+    </div>
+        <div class="chats" ng-repeat="message in home.messages">
+          <div class="username-text">
+            <h6>{{ message.username }}</h6>
+          </div>
+          <div class="user-chats">
+            <p>{{ message.content }}</p>
+          </div>
+          <div class="time">
+            <h6>{{ message.sentAt }}</h6>
+          </div>
+        </div>
+
+    </div>
 </section>
