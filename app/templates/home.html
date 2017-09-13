@@ -3,7 +3,7 @@
   <div class="nav">
     <div class="logo">
         <h1>Bloc Chat</h1>
-        
+
       </div>
 
         <button type="button" name="new-room" data-target="modal" ng-click="home.openRoom()">New Room</button>
@@ -28,7 +28,11 @@
           <div class="time">
             <h6>{{ message.sentAt }}</h6>
           </div>
-        </div>
+       </div>
+    </div>
 
+    <div class="message-bar">
+      <input type="text" class="message-text" ng-model="home.newMessage.content">
+      <button class="btn btn-primary" type="button" ng-click="home.sentMessage()">Send Chat</button>
     </div>
 </section>

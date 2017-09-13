@@ -49,7 +49,6 @@
   position: relative;
   text-align: center;
 
-
 }
 
 .chats {
@@ -75,7 +74,23 @@ margin-top: 15px;
 }
 
 .time {
-  
+
   float: right;
   margin-right: 20px;
+}
+
+.message-bar {
+  width: 67%;
+  right: 0px;
+  position: fixed;
+  bottom: 0px;
+  background-color: #99cbe8;
+  text-align: center;
+  border: solid 10px #99cbe8;
+
+}
+.message-text {
+    width: 85%;
+    line-height: 20px;
+    padding: 20px 10px;
 }
