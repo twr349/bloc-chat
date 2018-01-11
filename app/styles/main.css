@@ -1,5 +1,5 @@
 .main {
-  font-family: 'Noto Serif', serif;
+
 }
 
 .nav {
@@ -9,7 +9,8 @@
   position: fixed;
   overflow: auto;
   text-align: center;
-
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
 
 }
 
@@ -35,6 +36,8 @@
 .logo {
   margin-left: 20px;
   display: inline;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
 }
 
 .message-box {
